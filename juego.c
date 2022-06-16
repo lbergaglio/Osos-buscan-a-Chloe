@@ -24,10 +24,6 @@
 
 const int TIEMPO_PARA_GANAR = 120;
 
-/*
-	PRE: -
-	POST: obtengo jugada validada ingresada por el usuario
-*/
 void ingreso_jugada(char* jugada){
 	
 	printf("%s",INGRESAR_JUGADA);
@@ -37,11 +33,7 @@ void ingreso_jugada(char* jugada){
 		scanf(" %s",jugada);
 	}
 }
-/*
-	PRE: recibo el estado del juego(si el oso encontro a chloe o no)
-	POST:-muestro por pantalla el mapa con todos los objetos visibles.
-		 -el usuario ingresa jugada 	
-*/
+
 void jugar_juego(juego_t juego,char jugada){
 
 	while(estado_juego(juego)==ESTADO_JUGANDO){
@@ -55,10 +47,7 @@ void jugar_juego(juego_t juego,char jugada){
 		system("clear");
 	}
 }
-/*
-	PRE:-
-	POST: en caso de ganar o perder, se imprime un cuadro diciendo si encontraste a chloe antes de tiempo o no.
-*/
+
 void ver_mensaje_resultado(double tiempo_total){
  	for(int i=0;i<CUADRO_ALTO;i++){
 		for(int j=0;j<CUADRO_LARGO;j++){
