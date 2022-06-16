@@ -230,8 +230,6 @@ char designo_personaje(char respuesta_1, char respuesta_2,int respuesta_3,int re
 	}
 }
 
-/*FIRMA AGREGADA PARA TP2*/
-
 void test_de_personalidad(char* personalidad_detectada){
 
 	char respuesta_1;
